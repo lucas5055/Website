@@ -1,33 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="linktree.css">
-    <title>Olá</title>
+
+     <meta charset="utf-8" />
+
+     <meta name="viewport" content="width=device-width,initial-scale=1" />
+     <title>Portfólio | Lucas Santos</title>
+
+     <meta name="description" content="Portfólio profissional — desenvolvedor web e designer." />
+
+     <meta name="theme-color" content="#2c3e50">
+
+     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="a">
-        <img class="img" src="foto.jpg" alt="Foto de Lucas Santos">
-        <h1 style="color: hsl(0, 0%, 100%); padding: 5px;">Lucas Santos</h1>
-        <p style="color: hsl(75, 94%, 57%); padding: 5px;">Construindo o sonho de ser um desenvolvedor Full-stack</p>
-        <p style="color: hsl(0, 0%, 100%); padding: 5px;">
-            Olá, seja bem-vindo(a) ao meu Linktree.<br>
-            Este espaço foi desenvolvido por mim com o objetivo de reunir meus principais canais de contato, 
-            além do portfólio com alguns dos projetos que já realizei. <br>Fique à vontade para explorar.
-        </p>
+     <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-        <div>
-            <button class="button" onclick="window.location.href='https://github.com/lucas5055'">Meu portfólio no Github</button>
-            <button class="button" onclick="window.location.href='https://www.linkedin.com/in/lucas-santos-69a400250/'">LinkedIn</button>
-            <button class="button" onclick="window.location.href='https://wa.me/qr/OZNIVUAKBFUWM1'">Fale comigo no Whatsapp</button>
-        </div>
-    </div>
+     <header>
+          <div class="container">
+               <nav>
+                    <div class="brand">Lucas Santos</div>
+                    <div>
+                         <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">☰</button>
+                         <div class="nav-links" id="primary-nav">
+                              <a href="#hero">Início</a>
+                              <a href="#sobre">Sobre</a>
+                              <a href="#projetos">Projetos</a>
+                              <a href="#contato">Contatos</a>
+                         </div>
+                    </div>
+               </nav>
+          </div>
+     </header>
 
-    <footer class="footer">
-        Challenge by Frontend Mentor. Coded by Lucas Santos.
-    </footer>
+     <main id="main">
 
+          <section id="hero">
+               <div class="hero-inner container">
+                    <h1>Olá — eu sou o <strong>Lucas Santos</strong></h1>
+                    <p>Estudante de Ciência da Computação e desenvolvedor Full-stack</p>
+                    <div style="display:flex;gap:12px;justify-content:center;">
+                         <a class="btn" href="#projetos">Ver projetos</a>
+                         <a class="ghost" href="#contato">Me contratar</a>
+                    </div>
+               </div>
+          </section>
+
+          <section id="sobre">
+               <div class="container">
+                    <h2 class="section-title">Sobre mim</h2>
+                    <div class="content">
+                         <div class="photo">
+                              <img src="https://via.placeholder.com/600x600?text=Sua+Foto"
+                                   alt="Foto de perfil — Seu Nome">
+                         </div>
+                         <div class="about">
+                              <p>Sou estudante de Ciência da Computação na Universidade De Franca (UNIFRAN) e
+                                   desenvolvedor Full-stack nas horas vagas. Tenho paixão por aplicações
+                                   que sejam não apenas funcionais, mas também visualmente atraentes e
+                                   intuitivas.</p>
+                              </p>
+                              <p style="margin-top:12px;color:var(--muted)">Disponível para trabalhos freelance, estágio
+                                   remunerado ou contratação PJ / CLT.</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section id="skills">
+               <div class="container">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="skills">
+                         <span class="tag" >HTML5</span>
+                         <span class="tag">CSS3</span>
+                         <span class="tag">C++</span>
+                         <span class="tag">SFML</span>
+                         <span class="tag">SQL</span>
+                         <span class="tag">Python</span>
+                         <span class="tag">GitHub</span>
+                    </div>
+               </div>
+          </section>
+
+          <section id="projetos">
+               <div class="container">
+                    <h2 class="section-title">Projetos</h2>
+                    <div class="grid">
+
+                         <article class="card">
+                              <img src="https://img.itch.zone/aW1nLzI0MjgxMzYxLmdpZg==/originalm/MqdhM1.gif"
+                                   alt="Imagem do projeto 1">
+                              <div class="card-body">
+                                   <h3>Pong</h3>
+                                   <p>Pong é um jogo de tênis desenvolvido pela Atari em 1972 para fliperamas, então
+                                        para desenvolver minhas habilidades eu fiz a minha versão usando Pygame.</p>
+                                   <div class="actions">
+                                        <a class="ghost" href="https://lucas5055.itch.io/pong">Ver</a>
+                                        <a class="ghost" href="https://github.com/lucas5055/Pong">Código</a>
+                                   </div>
+                              </div>
+                         </article>
+
+                         <article class="card">
+                              <img src="https://img.itch.zone/aW1hZ2UvNDA0MjM3NC8yNDA5OTUyNy5wbmc=/347x500/J%2B6GWn.png"
+                                   alt="Imagem do projeto 2">
+                              <div class="card-body">
+                                   <h3>TicTac-Toe</h3>
+                                   <p>TicTac-Toe ou Jogo da velha é um clássico jogo, este é meu primeiro projeto feito
+                                        em C++ com SFML</p>
+                                   <div class="actions">
+                                        <a class="ghost" href="https://lucas5055.itch.io/tic-tac-toe">Ver</a>
+                                        <a class="ghost" href="https://github.com/lucas5055/TicTac-Toe">Código</a>
+                                   </div>
+                              </div>
+                         </article>
+
+                         <article class="card">
+                              <img src= "https://github.com/lucas5055/Website/blob/main/screencapture-file.png?raw=true" alt="Imagem do projeto 3">
+                              <div class="card-body">
+                                   <h3>Website</h3>
+                                   <p>De forma resumida é apenas o repositório deste site.</p>
+                                   <div class="actions">
+                                        <a class="ghost" href="https://github.com/lucas5055/Website">Código</a>
+                                   </div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <img src="https://github.com/lucas5055/Recipe/blob/main/Omelette%20Recipe%20-%20Google%20Chrome%2027_11_2025%2017_46_38.png?raw=true" alt="Imagem do projeto 3">
+                              <div class="card-body">
+                                   <h3>Recipe</h3>
+                                   <p>Um site simples que exibe uma receita completa, incluindo ingredientes, tempo de preparo, instruções e informações nutricionais.</p>
+                                   <div class="actions">
+                                        <a class="ghost" href="https://lucas5055.github.io/Recipe/">Ver</a>
+                                        <a class="ghost" href="https://github.com/lucas5055/Recipe">Código</a>
+                                   </div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <img src="https://raw.githubusercontent.com/lucas5055/Linktree/4576095fc5e5ad0ad86e9775222c453322dbe85f/Jessica%20Linktree%20-%20Google%20Chrome%2027_11_2025%2017_54_40.png" alt="Imagem do projeto 3">
+                              <div class="card-body">
+                                   <h3>LinkTree</h3>
+                                   <p>Um site simples que organiza links importantes de forma clara e acessível ideal para compartilhar suas redes, perfis e links em um só lugar.</p>
+                                   <div class="actions">
+                                        <a class="ghost" href="#">Ver</a>
+                                        <a class="ghost" href="#">Código</a>
+                                   </div>
+                              </div>
+                         </article>
+                         <article class="card">
+                              <img src="https://via.placeholder.com/800x400?text=Projeto+3" alt="Imagem do projeto 3">
+                              <div class="card-body">
+                                   <h3>Echo Maze</h3>
+                                   <p>Echo Maze é o meu um jogo de terror retro 2D, meu primeiro projeto "original", ainda esta em desenvolvimento.</p>
+                                   <div class="actions">
+                                        <a class="ghost" href="https://github.com/lucas5055/Echo-Maze">Código</a>
+                                   </div>
+                              </div>
+                         </article>
+                    </div>
+               </div>
+          </section>
+
+          <section id="contato">
+               <div class="container">
+                    <h2 class="section-title">Vamos conversar?</h2>
+                    <p style="text-align:center;max-width:700px;margin:0 auto 18px;color:rgba(255,255,255,0.9)">Se
+                         tiver uma ideia de projeto ou só quiser conversar, entre em contato comigo.</p>
+                    <div class="socials">
+                         <a class="ghost" href="mailto:gsantosemanoel@gmail.com"><img class="Icon"
+                                   src="Gmail_icon_.png">Email</a>
+                         <a class="ghost" href="https://www.linkedin.com/in/lucas-santos-69a400250/"><img class="Icon"
+                                   src="linkedin.png">LinkedIn</a>
+                         <a class="ghost" href="https://github.com/lucas5055"><img class="Icon"
+                                   src="github.jpg">GitHub</a>
+                         <a class="ghost" href="https://wa.me/qr/OZNIVUAKBFUWM1 "> <img class="Icon"
+                                   src="Whatsapp.png">WhatsApp</a>
+                    </div>
+               </div>
+          </section>
+
+     </main>
+
+     <footer>
+          <div class="container">&copy; <span id="year">2025</span> • Lucas Santos — Todos os direitos reservados</div>
+     </footer>
+
+
+     <script src="script.js"></script>
 </body>
+
 </html>
